@@ -8,15 +8,15 @@ clean:
 
 install:
 	virtualenv venv; \
-	. venv/bin/activate; \
+	. venv/Script/activate; \
 	pip install -r requirements.txt;
 
 tests:
-	. venv/bin/activate; \
+	. venv/Script/activate; \
 	python manage.py test
 
 run:
-	. venv/bin/activate; \
+	. venv/Script/activate; \
 	python manage.py run
 
 all: clean install tests run
